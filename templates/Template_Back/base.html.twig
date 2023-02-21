@@ -43,9 +43,15 @@
   <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
+<<<<<<<< Updated upstream:templates/Template_Back/base.html.twig
       <a href=" {{ path('back_index') }} " class="logo d-flex align-items-center">
         <img src="{{asset('Template_Back/img/logo.png')}}" alt="">
         <span class="d-none d-lg-block">SuperEpicNavBar</span>
+========
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="{{asset('assets/img/logo.png')}}" alt="">
+        <span class="d-none d-lg-block">HealthHerald</span>
+>>>>>>>> Stashed changes:templates/base.html.twig
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
@@ -330,14 +336,22 @@
       <li class="nav-heading">Pages</li>
 
       <li class="nav-item">
+<<<<<<<< Updated upstream:templates/Template_Back/base.html.twig
         <a class="nav-link collapsed" href="{{ path('back_login') }}">
+========
+        <a class="nav-link collapsed" href="{{ path('app_user_new') }}">
+>>>>>>>> Stashed changes:templates/base.html.twig
           <i class="bi bi-person"></i>
           <span>Profile</span>
         </a>
       </li><!-- End Profile Page Nav -->
 
       <li class="nav-item">
+<<<<<<<< Updated upstream:templates/Template_Back/base.html.twig
         <a class="nav-link collapsed" href="{{ path('rendezvous_index') }}">
+========
+        <a class="nav-link collapsed" href="{{ path('app_user_index') }}">
+>>>>>>>> Stashed changes:templates/base.html.twig
           <i class="bi bi-question-circle"></i>
           <span>Rendez-Vous</span>
         </a>
@@ -351,16 +365,24 @@
       </li><!-- End F.A.Q Page Nav -->
 
       <li class="nav-item">
+<<<<<<<< Updated upstream:templates/Template_Back/base.html.twig
         <a class="nav-link collapsed" href="{{ path('back_contact') }}">
+========
+        <a class="nav-link collapsed" href="{{ path('app_roleuser_new') }}">
+>>>>>>>> Stashed changes:templates/base.html.twig
           <i class="bi bi-envelope"></i>
-          <span>Contact</span>
+          <span>Role</span>
         </a>
       </li><!-- End Contact Page Nav -->
 
       <li class="nav-item">
+<<<<<<<< Updated upstream:templates/Template_Back/base.html.twig
         <a class="nav-link collapsed" href="{{ path('back_register') }}">
+========
+        <a class="nav-link collapsed" href="{{ path('app_roleuser_index') }}">
+>>>>>>>> Stashed changes:templates/base.html.twig
           <i class="bi bi-card-list"></i>
-          <span>Register</span>
+          <span>InfoRole</span>
         </a>
       </li><!-- End Register Page Nav -->
 
