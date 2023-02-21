@@ -1,7 +1,7 @@
     {% extends 'base.html.twig' %}
 {% block body %}
 <center>
-<div class="d-flex align-items-center justify-content-center" style="height: 250px;"> </div>
+<div class="d-flex align-items-center justify-content-center" style="height: 550px;"> </div>
 <head>
 	<title>Mon titre de page</title>
 </head>
@@ -9,8 +9,8 @@
 	<h1>Bienvenue admin AZIZ.</h1>
 	<p>Vous voulez ajouter quelqu'un :</p>
 </body>
-
 {{form_start (form,{'attr': {'novalidate': 'novalidate '}} ) }}
+
 <table>
 <tr>
 <td> {{ form_label( form.nomut, "Nom : ") }} </td>

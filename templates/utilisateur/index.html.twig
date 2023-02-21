@@ -6,8 +6,9 @@
 <center>
 
     <h1>Utilisateur index</h1>
+<div class="d-flex align-items-center justify-content-center" style="height: 250px;"> </div>
 
-    <table class="table">
+    <table class="table" style="width:80PX">
         <thead>
             <tr>
                 <th>Id</th>
@@ -28,7 +29,8 @@
                 <td>{{ utilisateur.mdput }}</td>
                 <td>
                 <div class="my-2"></div><a href="{{ path('app_utilisateur_edit', {'id': utilisateur.id}) }}"class="btn btn-success btn-icon-split"><span class="text">show</span></a>
-                <div class="my-2"></div><a href="{{ path('app_utilisateur_edit', {'id': utilisateur.id}) }}"class="btn btn-success btn-icon-split"><span class="text">edit</span></a>
+                <a href="{{ path('app_utilisateur_edit', {'id': utilisateur.id}) }}" class="btn btn-warning">edit</a>
+                <a href="{{ path('app_utilisateur_delete', {'id': utilisateur.id}) }}" class="btn btn-danger">delet</a>
              </td>
             </tr>
         {% else %}
@@ -38,7 +40,9 @@
         {% endfor %}
         </tbody>
     </table>
-
+ </div>
     <a href="{{ path('app_utilisateur_new') }}">Create new</a>
-    <center/>
+    </center>
+    
+
 {% endblock %}
